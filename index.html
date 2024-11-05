@@ -26,12 +26,13 @@
         </header>
 
         <!-- 導航欄 -->
-        <nav>
+        <nav class="bar">
             <ul>
                 <li><a href="#about">關於我</a></li>
                 <li><a href="#skills">專業技能</a></li>
                 <li><a href="#experience">經歷</a></li>
                 <li><a href="#contact">聯絡資訊</a></li>
+                <li><a href="#music">播放音樂</a></li>
             </ul>
         </nav>
 
@@ -111,12 +112,13 @@
             </ul>
             <p>版權所有 &copy; 2024 蘇奕安</p>
         </footer>
-        <audio id="background-music" loop>
-            <source src="music/Backstreet Boys - I Want It That Way (Lyrics).mp3" type="audio/mpeg">
-          </audio>
-          <button onclick="document.getElementById('background-music').play()">播放音樂</button>
-          <button onclick="document.getElementById('background-music').pause()">暫停音樂</button>
-          
+        <section id="music">
+            <audio id="background-music" loop>
+               <source src="music/Backstreet Boys - I Want It That Way (Lyrics).mp3" type="audio/mpeg">
+            </audio>
+            <button onclick="document.getElementById('background-music').play()">播放音樂</button>
+            <button onclick="document.getElementById('background-music').pause()">暫停音樂</button>
+        </section>
     </div>
 </body>
 </html>
