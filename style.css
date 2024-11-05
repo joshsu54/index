@@ -1,0 +1,257 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* 主內容容器 */
+.container {
+    width: 90%;
+    max-width: 900px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    margin: 20px;
+}
+
+/* 頁頭區域 */
+header {
+    background-color: #4a90e2;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.1em;
+    margin: 5px 0;
+    color: #e0f7fa;
+}
+
+/* 導航欄 */
+nav {
+    background-color: #f5f5f5;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: #4a90e2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #00796b;
+}
+
+/* 區塊樣式 */
+section, footer, aside {
+    padding: 20px;
+    margin: 20px 10px;
+    background-color: #fafafa;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section h2, footer h2, aside h2 {
+    color: #4a90e2;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+/* 技能列表 */
+#skills {
+    text-align: center;
+    margin: 20px auto;
+}
+
+#skills h2 {
+    color: #4a90e2;
+    margin-bottom: 20px;
+}
+
+.skill-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.skill-list li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 120px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fafafa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.skill-list li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.skill-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* 經歷項目 */
+.experience-item {
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: #ffffff;
+    border-left: 5px solid #4a90e2;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.experience-item h3 {
+    color: #00796b;
+    margin-top: 0;
+}
+
+/* 頁腳樣式 */
+footer {
+    text-align: center;
+    background-color: #4a90e2;
+    color: #ffffff;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #e0f7fa;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+#play-button {
+    display: block;
+    width: 150px;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #00796b;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+#play-button:hover {
+    background-color: #004d40;
+}
+
+/* 影片樣式 */
+video {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+}
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    object-fit: cover; /* 保持圖片比例並填滿區域 */
+    border-radius: 50%; /* 使圖片顯示為圓形，適合個人頭像 */
+}
+#contact {
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#contact h2 {
+    color: #4a90e2;
+    margin-bottom: 20px;
+}
+
+/* 設定聯絡資訊列表的排列方式 */
+.contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap; /* 讓項目自動換行 */
+    gap: 15px;
+    justify-content: center; /* 水平置中 */
+}
+
+/* 設置每個聯絡方式的樣式 */
+.contact-list li {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* 在每個項目內水平置中 */
+    font-size: 1.1em;
+    color: #000;
+    width: 45%; /* 每個項目寬度 */
+    box-sizing: border-box;
+}
+
+/* 設置聯絡方式圖標的樣式 */
+.contact-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+/* 設置連結的樣式 */
+.contact-list a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-list a:hover {
+    color: #4a90e2;
+}
+
+/* 版權樣式 */
+#contact p {
+    margin-top: 20px;
+    color: #000;
+    font-size: 0.9em;
+}

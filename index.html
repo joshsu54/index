@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人履歷</title>
+    <style>
+        .profile-pic {
+            width: 150px; /* 固定寬度 */
+            height: 150px; /* 固定高度 */
+            object-fit: cover; /* 圖片自動調整比例以填滿區域 */
+            border-radius: 50%; /* 圓形效果 */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 加上陰影效果 */
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- 頁頭 -->
+        <header>
+            <img src="image/S__4333578.jpg" alt="個人照片" class="profile-pic">
+            <h1>蘇奕安的個人履歷</h1>
+            <p>“努力不一定成功，但不努力肯定不會成功”</p>
+        </header>
+
+        <!-- 導航欄 -->
+        <nav>
+            <ul>
+                <li><a href="#about">關於我</a></li>
+                <li><a href="#skills">專業技能</a></li>
+                <li><a href="#experience">經歷</a></li>
+                <li><a href="#contact">聯絡資訊</a></li>
+            </ul>
+        </nav>
+
+        <!-- 主要內容 -->
+        <main>
+            <!-- 關於我 -->
+            <section id="about">
+                <h2>關於我</h2>
+                <p>我是來自中原資管系的蘇奕安，平時對於感興趣的事物會充滿熱情，比如在學期間學的 Python。</p>
+            </section>
+
+            <section id="skills">
+                <h2>專業與技能</h2>
+                <ul class="skill-list">
+                    <li>
+                        <img src="image/java_binary_code_gears_programming_coding_development_by_bluebay2014_gettyimages-1040871468_2400x1600-100795798-orig.webp" alt="Java logo" class="skill-icon">
+                        Java
+                    </li>
+                    <li>
+                        <img src="image/Python-logo-notext.svg.png" alt="Python logo" class="skill-icon">
+                        Python
+                    </li>
+                    <li>
+                        <img src="image/images.png" alt="C 語言 logo" class="skill-icon">
+                        C 語言
+                    </li>
+                    <li>
+                        <img src="image/61e9ed9b-425d-4733-9ae9-16c57b378279.png" alt="HTML/CSS logo" class="skill-icon">
+                        CSS/HTML
+                    </li>
+                </ul>
+            </section>
+
+            <!-- 經歷 -->
+            <section id="experience">
+                <h2>個人經歷</h2>
+                <div class="experience-item">
+                    <h3>川閱溪流 攜心相印</h3>
+                    <p>參與志工活動，前往老溪街陪伴小學生進行淨溪活動，教會了我如何照顧小孩。</p>
+                    <!-- 插入影片 -->
+                    <video width="100%" controls>
+                        <source src="video/baa49450-036c-4aa9-8edd-6c89a01754ca.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="experience-item">
+                    <h3>APCS 大學程式設計先修檢測課程</h3>
+                    <p>此課程是在我高中時修的一門興趣選修，課程內容主要是在教你C語言以及程式的結構，修完這次課程後我對於C語言有了更多的認知。</p>
+                </div>
+                <div class="experience-item">
+                    <h3>戰鼓社</h3>
+                    <p>在高中時期，我曾經在戰鼓社打過一陣鼓，與社員之間的配合與聽著教練的指揮讓我對節奏感有更好的認知。</p>
+                </div>
+            </section>
+
+        <!-- 頁腳 -->
+        <footer id="contact">
+            <h2>聯絡資訊</h2>
+            <ul class="contact-list">
+                <li>
+                    <img src="image/gmail.png" alt="Email icon" class="contact-icon">
+                    Email: <a href="mailto:joshsu54@gmail.com">joshsu54@gmail.com</a>
+                </li>
+                <li>
+                    <img src="image/FB.png" alt="Facebook icon" class="contact-icon">
+                    FB: <a href="https://www.facebook.com/profile.php?id=100023666601305">蘇奕安</a>
+                </li>
+                <li>
+                    <img src="image/Instagram_logo_2022.svg" alt="Instagram icon" class="contact-icon">
+                    IG: <a href="https://www.instagram.com/en1234154/">En</a>
+                </li>
+                <li>
+                    <img src="image/channels4_profile.jpg" alt="Email icon" class="contact-icon">
+                    Discord: <a href="https://discord.com/channels/@me">En</a>
+                </li>
+            </ul>
+            <p>版權所有 &copy; 2024 蘇奕安</p>
+        </footer>
+        <audio id="background-music" loop>
+            <source src="music/Backstreet Boys - I Want It That Way (Lyrics).mp3" type="audio/mpeg">
+          </audio>
+          <button onclick="document.getElementById('background-music').play()">播放音樂</button>
+          <button onclick="document.getElementById('background-music').pause()">暫停音樂</button>
+          
+    </div>
+</body>
+</html>
