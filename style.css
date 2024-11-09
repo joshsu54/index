@@ -1,333 +1,381 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f4f8;
-    color: #333;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f7f8fa;
+  color: #333;
 }
 
-/* 主內容容器 */
 .container {
-    width: 90%;
-    max-width: 900px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    overflow: hidden;
-    margin: 20px;
+  width: 95%;
+  max-width: 1100px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 20px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.profile-pic {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 4px solid #48a9fe;
+  object-fit: cover;
+  margin-top: -80px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* 頁頭區域 */
 header {
-    background-color: #4a90e2;
-    color: #ffffff;
-    padding: 20px;
-    text-align: center;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #6c63ff, #48a9fe);
+  color: #fff;
+  border-radius: 8px 8px 0 0;
 }
 
 header h1 {
-    font-size: 2em;
-    margin: 0;
+  font-size: 2.2em;
+  font-weight: bold;
 }
 
 header p {
-    font-size: 1.1em;
-    margin: 5px 0;
-    color: #e0f7fa;
+  font-size: 1.1em;
+  margin-top: 8px;
 }
 
 /* 導航欄 */
 .bar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%; 
-    background-color: #4a90e2; 
-    color: #ffffff;
-    padding: 10px 0;
-    text-align: center;
-    z-index: 1000; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; 
+  background-color: #4a90e2; 
+  color: #ffffff;
+  padding: 10px 0;
+  text-align: center;
+  z-index: 1000; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 /* 導航列的連結樣式 */
 .bar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%; 
-    background-color: #4a90e2; 
-    color: #ffffff;
-    padding: 15px 0;
-    text-align: center;
-    z-index: 1000; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; 
+  background-color: #4a90e2; 
+  color: #ffffff;
+  padding: 15px 0;
+  text-align: center;
+  z-index: 1000; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 /* 導航列的連結樣式 */
 .bar ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
 .bar ul li {
-    display: inline;
+  display: inline;
 }
 
 .bar ul li a {
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .bar ul li a:hover {
-    color: #e0f7fa;
+  color: #e0f7fa;
 }
 
 /* 確保內容不被導航列遮住 */
 body {
-    padding-top: 70px; 
+  padding-top: 70px; 
 }
 
 /* 確保內容不被導航列遮住 */
 body {
-    padding-top: 60px; 
+  padding-top: 60px; 
 }
 /* 區塊樣式 */
 section, footer, aside {
-    padding: 20px;
-    margin: 20px 10px;
-    background-color: #fafafa;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px 10px;
+  background-color: #fafafa;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 section h2, footer h2, aside h2 {
-    color: #4a90e2;
-    font-size: 1.5em;
-    margin-bottom: 10px;
+  color: #4a90e2;
+  font-size: 1.5em;
+  margin-bottom: 10px;
 }
 
 /* 技能列表 */
-#skills {
-    text-align: center;
-    margin: 20px auto;
-}
-
-#skills h2 {
-    color: #4a90e2;
-    margin-bottom: 20px;
-}
-
 .skill-list {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* 每個技能項之間的距離 */
+  list-style-type: none; /* 去除項目符號 */
+  padding: 0;
+  margin: 0;
 }
 
 .skill-list li {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 120px;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: #fafafa;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.skill-list li:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-bottom: 1px solid #ccc; /* 每個技能項目之間的分隔線 */
+  padding-bottom: 10px;
 }
 
 .skill-icon {
-    width: 60px;
-    height: 60px;
-    margin-bottom: 10px;
-    border-radius: 50%;
-    object-fit: cover;
+  width: 50px; /* 設定圖示的大小 */
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: #e0e0e0;
+  height: 8px;
+  margin-top: 8px;
+  border-radius: 5px;
+}
+
+.java, .python, .c-lang, .html-css {
+  height: 100%;
+  border-radius: 5px;
+}
+
+.java {
+  background-color: #f89820;
+}
+
+.python {
+  background-color: #3572A5;
+}
+
+.c-lang {
+  background-color: #555555;
+}
+
+.html-css {
+  background-color: #264de4;
 }
 
 /* 經歷項目 */
 .experience-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-    max-width: 600px;
-    margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .experience-item img {
-    width: 100%;
-    max-width: 400px; 
-    height: auto; 
-    border-radius: 8px; 
-    margin-bottom: 15px;
+  width: 100%;
+  max-width: 400px; 
+  height: auto; 
+  border-radius: 8px; 
+  margin-bottom: 15px;
 }
 
 .experience-item h3 {
-    color: #4a90e2;
-    margin-top: 10px;
+  color: #4a90e2;
+  margin-top: 10px;
 }
 
 .experience-item p {
-    color: #333;
-    font-size: 1em;
-    text-align: center;
+  color: #333;
+  font-size: 1em;
+  text-align: center;
 }
 
 /* 頁腳樣式 */
 footer {
-    text-align: center;
-    background-color: #4a90e2;
-    color: #ffffff;
+  text-align: center;
+  background-color: #4a90e2;
+  color: #ffffff;
 }
 
 footer p {
-    margin: 5px 0;
+  margin: 5px 0;
 }
 
 footer a {
-    color: #e0f7fa;
-    text-decoration: none;
+  color: #e0f7fa;
+  text-decoration: none;
 }
 
 footer a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 #play-button {
-    display: block;
-    width: 150px;
-    margin: 20px auto;
-    padding: 10px 20px;
-    background-color: #00796b;
-    color: black;
-    border: none;
-    border-radius: 5px;
-    font-size: 1em;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    text-align: center;
+  display: block;
+  width: 150px;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #00796b;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
 }
 
 #play-button:hover {
-    background-color: #004d40;
+  background-color: #004d40;
 }
 
 /* 影片樣式 */
 video {
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
 }
 .profile-pic {
-    width: 150px;
-    height: 150px;
-    object-fit: cover; 
-    border-radius: 50%; 
+  width: 150px;
+  height: 150px;
+  object-fit: cover; 
+  border-radius: 50%; 
 }
 #contact {
-    text-align: center;
-    margin: 20px auto;
-    padding: 20px;
-    max-width: 600px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 600px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 #contact h2 {
-    color: #4a90e2;
-    margin-bottom: 20px;
+  color: #4a90e2;
+  margin-bottom: 20px;
 }
 
 /* 設定聯絡資訊列表的排列方式 */
 .contact-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap; 
-    gap: 15px;
-    justify-content: center; 
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 15px;
+  justify-content: center; 
 }
 
 /* 設置每個聯絡方式的樣式 */
 .contact-list li {
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-    font-size: 1.1em;
-    color: #000;
-    width: 45%; 
-    box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  font-size: 1.1em;
+  color: #000;
+  width: 45%; 
+  box-sizing: border-box;
 }
 
 /* 設置聯絡方式圖標的樣式 */
 .contact-icon {
-    width: 24px;
-    height: 24px;
-    margin-right: 10px;
-    border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  border-radius: 50%;
 }
 
 /* 設置連結的樣式 */
 .contact-list a {
-    color: #000;
-    text-decoration: none;
-    font-weight: bold;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .contact-list a:hover {
-    color: #4a90e2;
+  color: #4a90e2;
 }
 
 /* 版權樣式 */
 #contact p {
-    margin-top: 20px;
-    color: #000;
-    font-size: 0.9em;
+  margin-top: 20px;
+  color: #000;
+  font-size: 0.9em;
 }
 #music {
-    padding: 20px;           
-    text-align: center;     
-    border-top: 1px solid #ddd; 
-    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* 添加陰影效果 */
+  padding: 20px;           
+  text-align: center;     
+  border-top: 1px solid #ddd; 
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* 添加陰影效果 */
 }
 
 #music button {
-    background-color: #4a90e2; 
-    color: #ffffff;           
-    border: none;             
-    padding: 10px 20px;       
-    margin: 5px;              
-    border-radius: 5px;       
-    cursor: pointer;          
-    font-weight: bold;        
-    transition: background-color 0.3s; 
+  background-color: #4a90e2; 
+  color: #ffffff;           
+  border: none;             
+  padding: 10px 20px;       
+  margin: 5px;              
+  border-radius: 5px;       
+  cursor: pointer;          
+  font-weight: bold;        
+  transition: background-color 0.3s; 
 }
 
 #music button:hover {
-    background-color: #00796b; 
+  background-color: #00796b; 
+}
+.section {
+  width: 100%;
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #f0f4f8;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+.section h2 {
+  font-size: 1.6em;
+  color: #333;
+  margin-bottom: 10px;
+}
+@media (max-width: 768px) {
+  .container {
+      padding: 15px;
+  }
+
+  .profile-pic {
+      width: 120px;
+      height: 120px;
+      margin-top: -60px;
+  }
+
+  header h1 {
+      font-size: 1.8em;
+  }
+
+  header p {
+      font-size: 1em;
+  }
+}

@@ -14,11 +14,73 @@
         }
     </style>
     <link rel="stylesheet" href="style.css">
+    <style>
+      body {
+          font-family: Arial, sans-serif;
+          background-color: #f4f4f4;
+          padding: 20px;
+      }
+
+      h2 {
+          color: #333;
+      }
+
+      /* 技能列表 */
+      .skill-list {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+      }
+
+      .skill-list li {
+          background-color: #fff;
+          padding: 15px;
+          margin-bottom: 10px;
+          border-radius: 8px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      /* 圖標 */
+      .skill-icon {
+          width: 40px;
+          height: 40px;
+          vertical-align: middle;
+          margin-right: 10px;
+      }
+
+      /* 進度條樣式 */
+      .progress-bar {
+          width: 100%;
+          background-color: #ddd;
+          border-radius: 5px;
+          height: 10px;
+          margin-top: 10px;
+      }
+
+      .progress-bar div {
+          height: 100%;
+          border-radius: 5px;
+      }
+
+      /* 顏色 */
+      .java { background-color: #f4b400; } /* Java */
+      .python { background-color: #306998; } /* Python */
+      .c-lang { background-color: #004481; } /* C */
+      .html-css { background-color: #e34c26; } /* HTML/CSS */
+
+      /* 文字顯示進度 */
+      .progress-label {
+          font-weight: bold;
+          margin-top: 5px;
+      }
+  </style>
 </head>
+
 <body>
 
     <div class="container">
         <!-- 頁頭 -->
+        
         <header>
             <img src="image/S__4333578.jpg" alt="個人照片" class="profile-pic">
             <h1>蘇奕安的個人履歷</h1>
@@ -46,32 +108,51 @@
                 <h2>關於我</h2>
                 <p>我是來自中原資管系的蘇奕安，平時對於感興趣的事物會充滿熱情，比如在學期間學的 Python。</p>
             </section>
-
             <section id="skills">
                 <h2>專業與技能</h2>
                 <ul class="skill-list">
-                    <li>
-                        <img src="image/java_binary_code_gears_programming_coding_development_by_bluebay2014_gettyimages-1040871468_2400x1600-100795798-orig.webp" alt="Java logo" class="skill-icon">
-                        Java
-                        大學時利用記事本學會的程式語言
-                    </li>
-                    <li>
-                        <img src="image/Python-logo-notext.svg.png" alt="Python logo" class="skill-icon">
-                        Python
-                        大學時學的第一個程式語言
-                    </li>
-                    <li>
-                        <img src="image/images.png" alt="C 語言 logo" class="skill-icon">
-                        C 語言
-                        高中時期都在學的程式語言
-                    </li>
-                    <li>
-                        <img src="image/61e9ed9b-425d-4733-9ae9-16c57b378279.png" alt="HTML/CSS logo" class="skill-icon">
-                        CSS/HTML
-                        大學時期用來設計網頁的程式語言
-                    </li>
-                </ul>
-            </section>
+                <li>
+                <img src="image/java_binary_code_gears_programming_coding_development_by_bluebay2014_gettyimages-1040871468_2400x1600-100795798-orig.webp" alt="Java logo" class="skill-icon">
+                 Java
+                <p>大學時利用記事本學會的程式語言</p>
+            <!-- 進度條 -->
+            <div class="progress-bar">
+                <div class="java" style="width: 60%;"></div>
+            </div>
+            <p class="progress-label">熟練度: 60%</p>
+        </li>
+        <li>
+            <img src="image/Python-logo-notext.svg.png" alt="Python logo" class="skill-icon">
+            Python
+            <p>大學時學的第一個程式語言</p>
+            <!-- 進度條 -->
+            <div class="progress-bar">
+                <div class="python" style="width: 80%;"></div>
+            </div>
+            <p class="progress-label">熟練度: 80%</p>
+        </li>
+        <li>
+            <img src="image/images.png" alt="C 語言 logo" class="skill-icon">
+            C 語言
+            <p>高中時期都在學的程式語言</p>
+            <!-- 進度條 -->
+            <div class="progress-bar">
+                <div class="c-lang" style="width: 70%;"></div>
+            </div>
+            <p class="progress-label">熟練度: 70%</p>
+        </li>
+        <li>
+            <img src="image/61e9ed9b-425d-4733-9ae9-16c57b378279.png" alt="HTML/CSS logo" class="skill-icon">
+            CSS/HTML
+            <p>大學時期用來設計網頁的程式語言</p>
+            <!-- 進度條 -->
+            <div class="progress-bar">
+                <div class="html-css" style="width: 45%;"></div>
+            </div>
+            <p class="progress-label">熟練度: 45%</p>
+        </li>
+    </ul>
+        </section>
 
             <!-- 經歷 -->
             <section id="experience">
@@ -216,4 +297,3 @@
         </head>
         <body>
 </body>
-</html>
