@@ -454,3 +454,11 @@ body {
     background-size: cover; /* 使背景圖片覆蓋整個頁面 */
     background-position: center; /* 圖片居中 */
 }
+.experience-item img {
+    width: 100%; /* 讓圖片的寬度適應容器 */
+    height: auto; /* 保持圖片的比例 */
+    max-width: 100%; /* 確保圖片的最大寬度不會超過容器 */
+    max-height: 100%; /* 確保圖片的最大高度不會超過容器 */
+    object-fit: contain; /* 確保圖片按比例縮放，避免拉伸或裁剪 */
+    border-radius: 8px; /* 圓角效果（如果需要的話） */
+}
